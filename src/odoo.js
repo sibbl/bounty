@@ -2,8 +2,8 @@ import loop from './loop';
 import { select, append, attr, style, text } from './selection';
 import transition from './transition';
 
-const digits = '0123456789ABCDEFGHIJKLMNOPRSTUVWXYZabcdefghijklmnoprstuvwxyz'.split('');
-const DIGITS_COUNT = digits.length - 1;
+const digits = '0123456789ABCDEFGHIJKLMNOPRSTUVWXYZabcdefghijklmnoprstuvwxyz\u00a0'.split('');
+const DIGITS_COUNT = digits.length;
 const ROTATIONS = 2;
 
 const createDigitRoulette = (svg, fontSize, lineHeight, id) => {
